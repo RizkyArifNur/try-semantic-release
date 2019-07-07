@@ -4,7 +4,7 @@
   "description": "none",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"success\"",
     "cz": "git-cz",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
