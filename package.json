@@ -28,7 +28,7 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "relase": {
+  "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
