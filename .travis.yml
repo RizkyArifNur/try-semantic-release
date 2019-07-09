@@ -16,10 +16,7 @@ jobs:
       deploy:
         provider: script
         skip_cleanup: true
-        script:
-          - npm run semantic-release
-          - cat package.json
-          - ls -a
+        script: bash deploy.sh
 
 # safelist
 branches:
