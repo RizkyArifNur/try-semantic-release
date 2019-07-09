@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/RizkyArifNur/try-semantic-release#readme",
   "devDependencies": {
+    "@semantic-release/exec": "^3.3.5",
     "cz-conventional-changelog": "^2.1.0",
     "json": "^9.0.6",
     "semantic-release": "^15.13.18"
