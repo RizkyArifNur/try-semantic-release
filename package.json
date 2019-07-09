@@ -21,6 +21,7 @@
   "homepage": "https://github.com/RizkyArifNur/try-semantic-release#readme",
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
+    "json": "^9.0.6",
     "semantic-release": "^15.13.18"
   },
   "config": {
@@ -32,7 +33,13 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/github"
+      "@semantic-release/github",
+      [
+        "@semantic-release/exec",
+        {
+          "prepareCmd": "npm run json -I -f package.json -e 'this.version=${nextRelease.version} '"
+        }
+      ]
     ]
   }
 }
