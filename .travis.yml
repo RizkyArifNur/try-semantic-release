@@ -17,8 +17,3 @@ jobs:
         provider: script
         skip_cleanup: true
         script: bash deploy.sh
-
-# safelist
-branches:
-  only:
-    - master
