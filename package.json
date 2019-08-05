@@ -43,14 +43,13 @@
       ]
     ],
     "branches": [
-      {
-        "name": "master",
-        "prerelease": "released"
-      },
+      "master",
       {
         "name": "dev",
-        "prerelease": "development"
+        "prerelease": "development",
+        "channel": "dev"
       }
-    ]
+    ],
+    "ci": false
   }
 }
