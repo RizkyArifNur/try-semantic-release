@@ -41,6 +41,13 @@
           "prepareCmd": "json -I -f package.json -e 'this.version=\"${nextRelease.version}\"'"
         }
       ]
+    ],
+    "branches": [
+      "master",
+      {
+        "name": "dev",
+        "prerelease": "development"
+      }
     ]
   }
 }
