@@ -40,6 +40,6 @@
     "branches": [
       "master"
     ],
-    "ci": true
+    "ci": false
   }
 }
