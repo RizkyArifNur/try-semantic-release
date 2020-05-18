@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"success\"",
     "commit": "git-cz ",
-    "semantic-release": "semantic-release",
+    "semantic-release": "semantic-release --branches [next,master]",
     "travis-deploy-once": "travis-deploy-once"
   },
   "repository": {
@@ -23,7 +23,8 @@
     "@semantic-release/exec": "^3.3.5",
     "cz-conventional-changelog": "^2.1.0",
     "json": "^9.0.6",
-    "semantic-release": "^15.13.18"
+    "semantic-release": "^15.13.18",
+    "semantic-release-deno": "git+https://git@github.com/RizkyArifNur/semantic-release-deno.git"
   },
   "config": {
     "commitizen": {
@@ -34,21 +35,11 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/github",
-      [
-        "@semantic-release/exec",
-        {
-          "prepareCmd": "json -I -f package.json -e 'this.version=\"${nextRelease.version}\"'"
-        }
-      ]
+      "semantic-release-deno"
     ],
     "branches": [
       "master",
-      {
-        "name": "dev",
-        "prerelease": "development",
-        "channel": "dev"
-      }
+      "next"
     ],
     "ci": false
   }
