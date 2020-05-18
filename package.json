@@ -23,7 +23,7 @@
     "@semantic-release/exec": "^3.3.5",
     "cz-conventional-changelog": "^2.1.0",
     "json": "^9.0.6",
-    "semantic-release": "17.0.7",
+    "semantic-release": "16.0.4",
     "semantic-release-deno": "git+https://git@github.com/RizkyArifNur/semantic-release-deno.git"
   },
   "config": {
@@ -38,9 +38,8 @@
       "semantic-release-deno"
     ],
     "branches": [
-      "master",
-      "next"
+      "master"
     ],
-    "ci": false
+    "ci": true
   }
 }
